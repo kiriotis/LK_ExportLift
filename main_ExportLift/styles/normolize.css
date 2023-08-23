@@ -287,6 +287,11 @@ textarea {
 	-webkit-appearance: textfield; /* 1 */
 	outline-offset: -2px; /* 2 */
 }
+p ,ul
+{
+	margin: 0;
+	padding: 0;
+}
 
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
