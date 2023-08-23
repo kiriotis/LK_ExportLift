@@ -184,3 +184,86 @@ header {
 
   }
 }
+
+//
+
+.hero {
+
+  .container {
+
+    .hero_main {
+      padding-top: 21px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+      align-self: stretch;
+      .left_side {
+
+        max-width: 540px;
+        display: flex;
+        flex-direction: column ;
+        gap:  24px;
+
+        .hero_text_main {
+          color: #333;
+          font-feature-settings: 'liga' off;
+          font-family: Inter ,sans-serif;
+          font-size: 60px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 76px; /* 126.667% */
+
+        }
+
+        .hero_text_ne_main {
+          color: rgba(51, 51, 51, 0.80);
+          font-feature-settings: 'liga' off;
+          font-family: Inter ,sans-serif;
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+
+        }
+
+        .button_wrapper {
+
+          button {
+            display: flex;
+            width: 200px;
+            height: 50px;
+            padding: 10px 20px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 8px;
+            background: #4762FF;
+            box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            border: none;
+            color: #FFF;
+            font-family: Inter ,sans-serif;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+
+
+          }
+        }
+      }
+
+      .right_side {
+
+        .img_wrapeper {
+          margin-right: 10px;
+
+          img {
+
+          }
+        }
+      }
+    }
+  }
+}
