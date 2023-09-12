@@ -57,6 +57,7 @@ button:active {
 
 header {
   background: var(--gray-100, #f3f4f6);
+  border-bottom: 2px rgba(0, 0, 0, 0.077) solid;
   z-index: 50;
   top: 0;
   left: 0;
@@ -256,6 +257,7 @@ header .container .header_wrapper .down_header .phone_button .hero_button {
 }
 .products .container .grid_wrapper .card {
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   border-radius: 9px;
   width: 580px;
@@ -287,10 +289,11 @@ header .container .header_wrapper .down_header .phone_button .hero_button {
   font-weight: 400;
   line-height: normal;
 }
-.products .container .grid_wrapper .card img_wrapper {
-  margin-left: 75px;
+.products .container .grid_wrapper .card .img_wraper {
+  height: 100%;
 }
-.products .container .grid_wrapper .card img_wrapper img {
+.products .container .grid_wrapper .card .img_wraper img {
+  height: 100%;
   border-radius: 9px;
 }
 
@@ -377,24 +380,46 @@ header .container .header_wrapper .down_header .phone_button .hero_button {
 .factorias .container .factorias_card_wrapper {
   margin-top: 89px;
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
   gap: 30px;
 }
 .factorias .container .factorias_card_wrapper .factorias_card {
+  box-sizing: border-box;
   display: flex;
   width: 393px;
   flex-direction: column;
   height: 550px;
-  padding: 16px 8px;
+  padding: 35px 15px;
   align-items: center;
   gap: 8px;
   border-radius: 9px;
   background: var(--gray-100, #f3f4f6);
   justify-content: space-between;
 }
+.factorias .container .factorias_card_wrapper .factorias_card.Fujizy {
+  scale: 105%;
+}
 .factorias .container .factorias_card_wrapper .factorias_card .img_wrapper {
-  padding-top: 32px;
+  width: 90px;
+  height: 115px;
   border-radius: 9px;
+}
+.factorias .container .factorias_card_wrapper .factorias_card .img_wrapper img {
+  height: 100%;
+}
+.factorias .container .factorias_card_wrapper .factorias_card .img_wrapper.Fujizy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  background: var(--zinc-300, #d4d4d8);
+  width: 90px;
+  height: 115px;
+}
+.factorias .container .factorias_card_wrapper .factorias_card .img_wrapper.Fujizy img {
+  max-width: 61px;
+  height: 54px;
 }
 .factorias .container .factorias_card_wrapper .factorias_card .factorias_card_text {
   padding: 24px;

@@ -58,6 +58,7 @@ button {
 
 header {
 	background: var(--gray-100, #f3f4f6);
+  border-bottom: 2px rgba(0, 0, 0, 0.077) solid;
 	z-index: 50;
 	top: 0;
 	left: 0;
@@ -218,7 +219,7 @@ header {
 //
 
 .hero {
-  padding-top: 175px;
+	padding-top: 175px;
 	.container {
 		.hero_main {
 			padding-top: 21px;
@@ -310,6 +311,7 @@ header {
 
 			.card {
 				display: flex;
+				justify-content: space-between;
 				flex-direction: row;
 				border-radius: 9px;
 				width: 580px;
@@ -344,10 +346,10 @@ header {
 					}
 				}
 
-				img_wrapper {
-					margin-left: 75px;
-
+				.img_wraper {
+					height: 100%;
 					img {
+						height: 100%;
 						border-radius: 9px;
 					}
 				}
@@ -465,15 +467,20 @@ header {
 		.factorias_card_wrapper {
 			margin-top: 89px;
 			display: flex;
+      justify-content: space-between;
 			flex-direction: row;
 			gap: 30px;
 
 			.factorias_card {
+				box-sizing: border-box;
+				&.Fujizy {
+					scale: 105%;
+				}
 				display: flex;
 				width: 393px;
 				flex-direction: column;
 				height: 550px;
-				padding: 16px 8px;
+				padding: 35px 15px;
 				align-items: center;
 				gap: 8px;
 				border-radius: 9px;
@@ -481,10 +488,27 @@ header {
 				justify-content: space-between;
 
 				.img_wrapper {
-					padding-top: 32px;
+					width: 90px;
+					height: 115px;
 					border-radius: 9px;
 
 					img {
+						height: 100%;
+					}
+					&.Fujizy {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+						border-radius: 9px;
+						background: var(--zinc-300, #d4d4d8);
+						width: 90px;
+						height: 115px;
+						//
+						img {
+							max-width: 61px;
+							height: 54px;
+							//
+						}
 					}
 				}
 
