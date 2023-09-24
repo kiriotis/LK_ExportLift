@@ -1,0 +1,43 @@
+.features {
+	background: var(--gray-100, #f3f4f6);
+	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	padding-bottom: 104px;
+
+	.container {
+		display: flex;
+		flex-direction: column;
+		gap: 60px;
+		.title_wrapper {
+			padding-top: 96px;
+
+			.title {
+				color: #333;
+				text-align: center;
+				font-feature-settings: "liga" off;
+				font-family: Inter;
+				font-size: 40px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+			}
+		}
+
+		.features_wrapper {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: repeat(2, 1fr);
+			justify-items: center;
+			grid-row-gap: 47px;
+			//
+			@include media-laptop {
+				grid-template-columns: repeat(2, 1fr);
+				grid-template-rows: repeat(3, 1fr);
+			}
+
+			@media (max-width: 690px) {
+				grid-template-columns: repeat(1, 1fr);
+				grid-template-rows: repeat(3, 1fr);
+			}
+		}
+	}
+}

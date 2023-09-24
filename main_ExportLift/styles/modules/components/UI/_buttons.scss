@@ -1,0 +1,50 @@
+button {
+	transition-duration: 300ms;
+
+	&:hover {
+		filter: brightness(120%);
+		cursor: pointer;
+	}
+
+	&:active {
+		scale: 0.95;
+	}
+}
+
+.button_wrapper {
+	display: flex;
+	width: fit-content;
+	padding: 15px 20px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border-radius: 8px;
+	background: $primary-color;
+	box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	border: none;
+	color: #fff;
+	font-family: Inter, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}
+
+.form--button_wrapper {
+	display: flex;
+	width: 100%;
+	padding: 10px 20px;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	border-radius: 8px;
+	background: $primary-color;
+	box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	border: none;
+	color: #fff;
+	font-family: Inter, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+}

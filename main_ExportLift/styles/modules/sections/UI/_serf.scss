@@ -1,0 +1,34 @@
+.serf {
+	background: var(--gray-100, #f3f4f6);
+	padding-bottom: 91px;
+
+	.container {
+		.title_wrapper {
+			padding-top: 95px;
+
+			.title {
+				color: #333;
+				text-align: center;
+				font-feature-settings: "liga" off;
+				font-family: Inter;
+				font-size: 40px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+			}
+		}
+
+		.main_content {
+			margin-top: 68px;
+			margin-left: 190px;
+			display: flex;
+			flex-direction: row;
+			gap: 76px;
+
+			.img_wrapper {
+				img {
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,46 @@
+.factorias {
+	padding-bottom: 92px;
+
+	.container {
+		.title_wrapper {
+			margin-top: 96px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			
+
+			.title_main {
+				color: #333;
+				text-align: center;
+				font-feature-settings: "liga" off;
+				font-family: Inter;
+				font-size: 40px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+			}
+
+			.title_sub {
+				margin-top: 10px;
+							color: rgba(51, 51, 51, 0.5);
+				text-align: center;
+				font-family: Inter sans-serif;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 700;
+				line-height: normal;
+			}
+		}
+
+		.factories_card_wrapper {
+			margin-top: 89px;
+			display: flex;
+			justify-content: space-between;
+			flex-direction: row;
+			gap: 30px;
+			@include media-laptop{
+				flex-direction: column;
+			}
+		}
+	}
+}
