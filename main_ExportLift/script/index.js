@@ -6,3 +6,6 @@ const burger = new Burger({
 	openBth: "openNavBtn",
 });
 burger.init();
+
+
+
