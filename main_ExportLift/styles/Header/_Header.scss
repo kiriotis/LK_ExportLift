@@ -1,0 +1,109 @@
+header {
+  z-index: 10;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  background-color: transparent;
+  width: 100%;
+
+  .container {
+    width: 100%;
+    .header_wrapper {
+      display: flex;
+      flex-direction: column;
+
+      .down_header {
+        padding-top: 20px;
+        padding-bottom: 15px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        .logo:hover {
+          transition-duration: 500ms;
+
+          cursor: pointer;
+        }
+        .logo {
+          transition-duration: 500ms;
+          display: flex;
+          flex-direction: row;
+          gap: 15px;
+          align-items: center;
+
+          .img_wrapper {
+            img {
+            }
+          }
+
+          .text_wrapper {
+            .logo_first {
+              color: #000;
+              font-family: Montserrat;
+              font-size: 14px;
+              font-style: normal;
+              font-weight: 300;
+              line-height: normal;
+            }
+
+            .logo_second {
+              color: #000;
+              font-family: Montserrat;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 700;
+              line-height: normal;
+            }
+          }
+        }
+
+        .naw_wrapper {
+          display: flex;
+
+          .nav_list {
+            display: flex;
+            gap: 60px;
+            align-items: center;
+
+            li {
+              transition-duration: 500ms;
+              list-style-type: none;
+              color: white;
+              font-family: Inter, sans-serif;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
+            }
+
+            li:hover {
+              transition-duration: 500ms;
+              scale: 1.1;
+              cursor: pointer;
+            }
+          }
+        }
+
+        .phone_button {
+          .hero_button {
+            display: flex;
+            padding: 10px 20px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 5px;
+            background: var(--blue-600, #2563eb);
+            box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+            border: none;
+            color: #fff;
+            font-family: Inter, sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+}

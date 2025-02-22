@@ -1,0 +1,65 @@
+@keyframes wipe-enter-hero {
+  0% {
+    transform: scale(1, 0.025);
+  }
+  50% {
+    transform: scale(1, 0.025);
+  }
+}
+
+.Hero {
+  width: 100%;
+  height: 100vh;
+  .Hero_Video_smoth {
+    position: absolute;
+    top: 0;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+  }
+
+  .Hero_bg_video {
+    width: 100%;
+    height: 100%;
+    .Hero_video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .Hero_text {
+    position: absolute;
+    bottom: 80px;
+    z-index: 11;
+    color: white;
+    animation-name: wipe-enter-hero;
+    animation-duration: 1s;
+
+    .container {
+      .Hero_text_left {
+        display: flex;
+        flex-direction: column;
+        .text_main {
+          font-family: Inter, sans-serif;
+          font-size: 64px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+          text-transform: uppercase;
+        }
+
+        .text_sub {
+          font-family: Inter, sans-serif;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+      // .Hero_text_right {
+      // }
+    }
+  }
+}
