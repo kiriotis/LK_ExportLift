@@ -8,11 +8,14 @@ footer {
   //
   .container {
     //
-   .footer--wrapper {
+    .footer--wrapper {
       display: flex;
       justify-content: space-between;
       //
       .details {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
         h3.title {
           font-size: 20px;
           font-weight: 500;

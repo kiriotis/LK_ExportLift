@@ -1,0 +1,131 @@
+.Partners {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  .Partners_Video_smoth {
+    position: absolute;
+    top: 0;
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+    background-color: $base-background_smooth;
+  }
+
+  .Partners_bg_video {
+    z-index: 130;
+    width: 100%;
+    height: 100%;
+    .Partners_video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .Partners_wrapper {
+    color: black;
+    font-family: $base-font_family;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+
+    .Parthers_left {
+      margin-left: 80px;
+      width: 55%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .Partners_text {
+        color: $base-text_color;
+        font-family: $base-font_family;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+      .Partners_subtext {
+        color: $base-text_color;
+        font-family: $base-font_family;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+    }
+    .Parthers_right {
+      width: 45%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-items: center;
+      justify-content: center;
+      .Partners_hero_wrapper {
+        overflow: hidden;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        .Partners_hero {
+          color: $base-text_color;
+          font-family: $base-font_family;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 800;
+          line-height: normal;
+          text-transform: uppercase;
+        }
+        .Partners_hero_sub {
+          color: $base-text_color;
+          font-family: $base-font_family;
+          font-size: 22px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+        .Partners_hero_maintext {
+          margin-top: 20px;
+          color: $base-text_color;
+          font-family: $base-font_family;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+        }
+        .Partners_hero_btnWrapper {
+          display: flex;
+          flex-direction: row;
+          justify-content: start;
+          gap: 20px;
+          .Partners_hero_btn {
+            border: 2px solid navy;
+            color: navy;
+            border-radius: 5px;
+            margin-top: 30px;
+            padding: 10px 30px;
+            font-size: 12px;
+            font-weight: 600;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+          }
+        }
+      }
+    }
+  }
+}
